@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main data-feed>
+    </main>
+
+    <div data-load></div>
+    <footer data-footer></footer>
+
+    <script src="js/Home.js"></script>
+    <script>
+        let run = new Home();
+        run.getCharacters();
+        run.Observer();
+    </script>
+</body>
+
+</html>
