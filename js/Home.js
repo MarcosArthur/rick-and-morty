@@ -26,7 +26,7 @@ class Home {
                 this.feed.innerHTML += response.results.map(element => {
                     return `
                     <div data-card>
-                        <img src="${element.image}">
+                        <img src="${element.image}" loading="lazy">
                         <div data-about>
                             <h5 data-title>${element.name}</h5>
                             <div data-info>
