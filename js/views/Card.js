@@ -15,7 +15,7 @@ class Card {
                         </div>
 
                         <div>
-                            <h6>type: ${element.type}</h6>
+                            <h6>type: ${(element.type == '' ? 'Uninformed' : element.type)}</h6>
                             <h6>gender: ${element.gender}</h6>
                        ' </div>
 
@@ -25,10 +25,5 @@ class Card {
         }).join('');
 
     }
-
-    static onClickCard(id) {
-
-    }
-
 
 }
